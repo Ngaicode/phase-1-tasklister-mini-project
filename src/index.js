@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 const createTask = (event) => {
   event.preventDefault();
-  //stop form from trying to submit
+  //stop resubmission
   const taskDescription = document.getElementById("new-task-description");
   const newTaskList = document.createElement("li");
   newTaskList.innerText = taskDescription.value;
